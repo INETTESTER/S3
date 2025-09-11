@@ -6,7 +6,7 @@
 ##########################################################################
                      API="putObject_b" 
                      google_sheet="https://docs.google.com/spreadsheets/d/1lq3-RjPMAWBPtG7lM3nxVv7C00E5QE5y35VPiw7JhBw/edit?gid=295244464#gid=295244464" 
-                     id="1"                 #เปลี่ยน id ทุกครั้งที่ยิง
+                     id="5"                 #เปลี่ยน id ทุกครั้งที่ยิง
                      user="3000";            #จำนวนผู้ใช้งาน
                      duration="1";         #วินาที
                      scenario="1"           #scenario="1" ยิงเเบบกำหนด request (duration ได้แค่ 1 วินาที)
