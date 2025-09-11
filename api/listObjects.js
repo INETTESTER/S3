@@ -11,9 +11,9 @@ const awsConfig = new AWSConfig({
 const s3 = new S3Client(awsConfig);
 
 // ---------- function listObjects ----------
-export async function listObjects(bucketName) {
+export async function listObjects() {
     try {
-        const res = await s3.listObjects(bucketName);
+        const res = await s3.listObjects(S3_BUCKET_NAME);
         //console.log(`Objects in ${bucketName}: ${JSON.stringify(res)}`);
         return res;
     } catch (err) {
