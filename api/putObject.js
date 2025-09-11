@@ -24,7 +24,7 @@ const fileSizeBytes = __ENV.FILE_SIZE_BYTES ? parseInt(__ENV.FILE_SIZE_BYTES) : 
 
 export async function putObject() {
     // สร้าง key แบบสุ่มไม่ซ้ำ
-    const objectKey = `simple-put-${__VU}-${__ITER}.bin`;
+    const objectKey = `loadtest/simple-put-${__VU}-${__ITER}.bin`;
 
     // สร้างไฟล์แบบ random bytes
     const fileData = crypto.randomBytes(fileSizeBytes);
