@@ -3,18 +3,22 @@ import { sleep } from 'k6';
 import { error_check } from '../check/check.js';
 import { scenario } from 'k6/execution';
 
-import { ran } from '../api/script.js';
-import { callback_scb } from '../api/getJson.js';
+import { putObject } from '../api/putObject.js';
+import { listBuckets } from '../api/listBuckets.js';
+import { listObjects } from '../api/listObjects.js';
+import { deleteObject } from '../api/deleteObject.js';
+import { getObject } from '../api/getObject.js';
 
 
 
 //============================================================================
 
-export default function () {    //เรียกใช้ API ใน export default function
-  response = ran()
-  //response = callback_scb(scenario)
-
-  
+export default async function () {    //เรียกใช้ API ใน export default function
+  //response = putObject()
+  //response = listBuckets()
+  //response = listObjects("test-zte")
+  //response = deleteObject()
+  response = getObject()
   error_check(response);
   sleep(1)
 }
