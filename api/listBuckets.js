@@ -20,7 +20,7 @@ const s3 = new S3Client(awsConfig);
 export async function listBuckets() {
     try {
         const res = await s3.listBuckets();
-        console.log(JSON.stringify(res, null, 2)); // debug ได้ถ้าอยากดูละเอียด
+        //console.log(JSON.stringify(res, null, 2)); // debug ได้ถ้าอยากดูละเอียด
         return res;
     } catch (err) {
         console.error(`ListBuckets error: ${err}`);
