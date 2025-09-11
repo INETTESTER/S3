@@ -22,9 +22,9 @@ const s3 = new S3Client(awsConfig);
 const bucketName = __ENV.S3_BUCKET_NAME || 'test-zte';
 const fileSizeBytes = __ENV.FILE_SIZE_BYTES ? parseInt(__ENV.FILE_SIZE_BYTES) : 1024 * 1024; // default 1MB
 
-export async function putObject() {
+export async function putObject(cid) {
     // สร้าง key แบบสุ่มไม่ซ้ำ
-    const objectKey = `loadtest/simple-put-${__VU}-${__ITER}.bin`;
+    const objectKey = `loadtest/simple-put-${__VU}-${__ITER}${cid}.bin`;
 
     // สร้างไฟล์แบบ random bytes
     const fileData = crypto.randomBytes(fileSizeBytes);
