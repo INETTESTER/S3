@@ -24,7 +24,7 @@ export async function putObject(cid) {
 
     try {
         //console.log(`Uploading ${objectKey} to bucket ${bucketName} ...`);
-        const res = await s3.putObject(bucketName, objectKey, fileData);
+        const res = await s3.putObject(S3_BUCKET_NAME, objectKey, fileData);
         //console.log(`Upload complete: ${objectKey}`);
         return res
     } catch (err) {
