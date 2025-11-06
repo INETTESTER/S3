@@ -17,8 +17,8 @@ export default async function () {    //เรียกใช้ API ใน expo
   //response = putObject(cid)
   //response = listBuckets()
   //response = listObjects()
-  //response = deleteObject(cid)
-  response = getObject()
+  response = deleteObject(cid)
+  //response = getObject()
   error_check(response);
   sleep(1)
 }
