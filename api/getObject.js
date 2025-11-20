@@ -15,7 +15,7 @@ const s3 = new S3Client(awsConfig);
 // ---------- get ----------
 export async function getObject() {
     try {
-        const res = await s3.getObject(S3_BUCKET_NAME, "ref-03.gif");
+        const res = await s3.getObject(S3_BUCKET_NAME, "ref-01.gif");
         //console.log(`⬇️ Downloaded: ref-6.gif, size=${res.Body.length} bytes`);
         return res;
     } catch (err) {
