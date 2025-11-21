@@ -14,9 +14,9 @@ import { getObject } from '../api/getObject.js';
 //============================================================================
 
 export default async function () {    //เรียกใช้ API ใน export default function
-  response = putObject(cid)
+  //response = putObject(cid)
   //response = listBuckets()
-  //response = listObjects()
+  response = listObjects()
   //response = deleteObject(cid)
   //response = getObject()
   error_check(response);
