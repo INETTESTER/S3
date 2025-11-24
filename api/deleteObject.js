@@ -13,7 +13,7 @@ const s3 = new S3Client(awsConfig);
 
 // ---------- delete ----------
 export async function deleteObject(cid) {
-    const objectKey = `loadtest/simple-put-${__VU}-${__ITER}${cid}.bin`;
+    const objectKey = `upload/simple-put-${__VU}-${__ITER}${cid}.bin`;
     try {
         const res = await s3.deleteObject(S3_BUCKET_NAME, objectKey);
         //console.log(`🗑️ Deleted: ${objectKey}`);
