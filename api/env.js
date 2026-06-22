@@ -41,8 +41,8 @@
 // export const url  = "https://192.168.90.32"
 
 // export const AWS_ACCESS_KEY_ID="39LFAL1NHSNL8EOJUD00"
-export const AWS_ACCESS_KEY_ID="1BW58PM1B8KCQB8ZRICA"
-export const AWS_SECRET_ACCESS_KEY="4szutwS52CWkgrnVADgjHXt3YUgk7r5oP0WWPRmO"
+export const AWS_ACCESS_KEY_ID="VFO20J74H6PL0C9RCHPO"
+export const AWS_SECRET_ACCESS_KEY="KQogf5RDFpvOR1rXC7tuAgbmtUrecArYja9xiv76"
 export const AWS_REGION="us-east-1"
 export const AWS_ENDPOINT_URL="https://s3th-api-a.inet.co.th"
 export const S3_BUCKET_NAME="loadtest"
